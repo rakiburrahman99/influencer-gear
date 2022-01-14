@@ -19,6 +19,41 @@ hr{
 }
 h3{font-size: 28px;}
 h4{font-size: 24px;}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=
+    Header Section css
+-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=*/
+.logo-text{
+    margin-top: 10px;
+} 
+.menu-bars{
+    display: none;
+}
+.menu{
+   margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+.menu ul li{
+    padding: 0 20px;
+}
+.menu ul li a{
+    color: #3A3A3A;
+    font-weight: 600;
+}
 /* -=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=
     Hero Section css
 -=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=*/
@@ -27,7 +62,8 @@ h4{font-size: 24px;}
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 14px;
-    margin-top: 145px;
+    margin-top: 50px;
+    margin-bottom: 90px;
 }
 
 .hero-title{
@@ -117,4 +153,33 @@ h4{font-size: 24px;}
 .rating{
     display: inline;
     margin-left: 10px;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .hero-main{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hero-main{
+        width: 400px;
+    }
+    .hero-text{
+        width: 332px;
+        text-align: center;
+        margin-bottom: 33px;
+    }
+    .logo-text h2{
+        font-size: 21px;
+        text-align: center;
+    }
+    .hero-title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .hero-img{
+        width: 257px;
+        height: 257px;
+        margin: 0 auto;
+    }
 }
