@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+hr{
+    width: 1110px;
+    color: #bfe5fe91;
+    margin: 30px auto;
+   
+}
+h3{font-size: 28px;}
+h4{font-size: 24px;}
+/* -=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=
+    Hero Section css
+-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=*/
+.hero-main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 14px;
+    margin-top: 145px;
+}
+
+.hero-title{
+    font-size: 52px;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin-bottom: 16px;
+}
+/* -=-=-=-=-=-=-=-=-=-=-need to edit=-=-=-==-=-=-=-=*/
+
+.hero-text{
+    transition: transform 0.8s;
+    padding: 10px;
+}
+.hero-text:hover{
+    /* border: 1px solid #9424F0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    transform: translate3d(5ch, 0.4in, 5em);
+    cursor: pointer; */
+}
+/* -=-=-=-=-=-=-=-=-=-=-need to edit=-=-=-==-=-=-=-=*/
+.hero-text p{
+    margin-bottom: 16px;
+}
+.hero-btn{
+    padding: 12px 30px;
+    background-image: linear-gradient(to right, #FD297A, #9424F0);
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+    transition: 0.5s;
+}
+.hero-btn:hover{
+    background-image: linear-gradient(to left, #FD297A, #9424F0);
+    transform: scale(1.25);
+}
+.hero-img{
+    display: flex;
+    justify-content: center;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=
+    Galary Section css
+-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=*/
+.section-title{
+    font-size: 28px;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.galary{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.products{
+    box-shadow: 2px 2px 20px 1px #aaaaaa;
+    width: 330px;
+    cursor: pointer;
+    transition: transform 0.7s;
+}
+.products:hover{
+    transform: scale(1.025);
+}
+.product-area{
+    padding: 20px;
+}
+.product-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.product-name{
+    font-weight: 600;
+}
+.product-rate{
+    font-weight: 400;
+}
+.product-rating{
+    margin-bottom: 5px;
+}
+.fa-star, .fa-star-half-alt{
+    color: #FB8200;
+}
+.rating{
+    display: inline;
+    margin-left: 10px;
+}
