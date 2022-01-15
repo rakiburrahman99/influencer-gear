@@ -82,10 +82,53 @@ header{
    position: relative;
    
 }
-.header-btm-text{
-    transition: transform 1s linear;
+/* animation */
+@keyframes slide{
+    0% {
+        background-color: wheat;
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 1000px;
+        top: 0;
+    }
+
+    50% {
+        background-color: turquoise;
+        left: 1000px;
+        top: 500px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0;
+        top: 500px;
+    }
+
+    100% {
+        background-color: wheat;
+        left: 0;
+        top: 0;
+    }
 }
-.header-btm-text:hover{
+.anim{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:#FD297A ;
+    position: absolute;
+    animation: slide 5s ease-in-out 1s infinite forwards;
+    animation-play-state: running;
+}
+/* animation */
+
+ .header-btm-text{
+    transition: transform 1s linear;
+} 
+ .header-btm-text:hover{
     box-shadow: inset 2px 3px 2px 5px rgba(226, 213, 213, 0.1);
     transform: rotate(360deg);
 }
